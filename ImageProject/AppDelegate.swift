@@ -13,9 +13,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+//        let coreDataManager = CoreDataManager()
+//        
+//        guard let navController = self.window?.rootViewController as? UINavigationController,
+//            let vc = navController.viewControllers.first as? PhotoListController  else {
+//                fatalError("RootViewController not found")
+//        }
+//        
+//        vc.managedObjectContext = coreDataManager.managedObjectContext
+        
         return true
     }
 
