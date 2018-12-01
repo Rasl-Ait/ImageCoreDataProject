@@ -79,3 +79,14 @@ class FetchedResultsProvider<T :NSManagedObject> : NSObject, NSFetchedResultsCon
         }
     }
 }
+
+
+extension FetchedResultsProvider {
+    var photos: [T] {
+        guard let objects = fetchedResultsController?.sections?.first?.objects as? [T] else {
+            return []
+        }
+        
+        return objects
+    }
+}

@@ -46,7 +46,6 @@ class GenericCVDataSource<V: UICollectionViewCell, T: NSManagedObject>: NSObject
         return cell
     }
     
-    
     func fetchedResultsProviderDidInsert(indexPath: IndexPath) {
         self.collectionView.insertItems(at: [indexPath])
     }
@@ -55,3 +54,5 @@ class GenericCVDataSource<V: UICollectionViewCell, T: NSManagedObject>: NSObject
         self.collectionView.deleteItems(at: [indexPath])
     }
 }
+
+

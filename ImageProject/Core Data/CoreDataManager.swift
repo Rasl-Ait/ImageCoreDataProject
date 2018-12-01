@@ -6,7 +6,6 @@
 //  Copyright © 2018 rasl. All rights reserved.
 //
 
-
 import CoreData
 import UIKit
 
@@ -33,11 +32,13 @@ class CoreDataManager {
     func addPhoto(_ image: UIImage) {
         let photo = Photo(context: managedObjectContext)
         photo.creationDate = Date() as Date
-        photo.imageData = image.jpegData(compressionQuality: 1.0)! as Data
+        if let image = image.jpegData(compressionQuality: 1.0) {
+            photo.imageData = NSData(data: image) as Data
+            
+        }
         
         managedObjectContext.saveChanges()
     }
-    
 }
 
 extension NSManagedObjectContext {

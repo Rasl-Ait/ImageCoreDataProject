@@ -19,6 +19,10 @@
 		DC59698D21A6D633004ACC0C /* GenericCVDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC59698C21A6D633004ACC0C /* GenericCVDataSource.swift */; };
 		DC59698F21A6D9D7004ACC0C /* PhotoPickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC59698E21A6D9D7004ACC0C /* PhotoPickerManager.swift */; };
 		DC59699121A6DC6B004ACC0C /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC59699021A6DC6B004ACC0C /* PhotoCell.swift */; };
+		DC5C372521A814C000758B29 /* PhotoPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5C372421A814C000758B29 /* PhotoPageController.swift */; };
+		DC5C372921A8196E00758B29 /* PhotoViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5C372821A8196E00758B29 /* PhotoViewerController.swift */; };
+		DC5C372B21A84AE500758B29 /* PhotoFilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5C372A21A84AE500758B29 /* PhotoFilterController.swift */; };
+		DC5C372D21A854FE00758B29 /* PhotoFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5C372C21A854FE00758B29 /* PhotoFilterCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		DC59698C21A6D633004ACC0C /* GenericCVDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCVDataSource.swift; sourceTree = "<group>"; };
 		DC59698E21A6D9D7004ACC0C /* PhotoPickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerManager.swift; sourceTree = "<group>"; };
 		DC59699021A6DC6B004ACC0C /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		DC5C372421A814C000758B29 /* PhotoPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPageController.swift; sourceTree = "<group>"; };
+		DC5C372821A8196E00758B29 /* PhotoViewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerController.swift; sourceTree = "<group>"; };
+		DC5C372A21A84AE500758B29 /* PhotoFilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFilterController.swift; sourceTree = "<group>"; };
+		DC5C372C21A854FE00758B29 /* PhotoFilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFilterCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				DC59699221A6FD5E004ACC0C /* Generic Model */,
-				DC59699321A6FD70004ACC0C /* Controllers */,
 				DC59697C21A6C2F9004ACC0C /* Core Data */,
+				DC59699321A6FD70004ACC0C /* Controllers */,
 				DC59696A21A6C2DC004ACC0C /* AppDelegate.swift */,
 				DC59696E21A6C2DD004ACC0C /* Main.storyboard */,
 				DC59697121A6C2DD004ACC0C /* Assets.xcassets */,
@@ -102,6 +110,8 @@
 		DC59699321A6FD70004ACC0C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DC5C372F21A8750F00758B29 /* Photo Controller */,
+				DC5C372E21A874F000758B29 /* Photo Filter Controller */,
 				DC59699421A6FD7A004ACC0C /* Photo List Controller */,
 			);
 			path = Controllers;
@@ -115,6 +125,24 @@
 				DC59696C21A6C2DC004ACC0C /* PhotoListController.swift */,
 			);
 			path = "Photo List Controller";
+			sourceTree = "<group>";
+		};
+		DC5C372E21A874F000758B29 /* Photo Filter Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DC5C372C21A854FE00758B29 /* PhotoFilterCell.swift */,
+				DC5C372A21A84AE500758B29 /* PhotoFilterController.swift */,
+			);
+			path = "Photo Filter Controller";
+			sourceTree = "<group>";
+		};
+		DC5C372F21A8750F00758B29 /* Photo Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DC5C372421A814C000758B29 /* PhotoPageController.swift */,
+				DC5C372821A8196E00758B29 /* PhotoViewerController.swift */,
+			);
+			path = "Photo Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,8 +219,12 @@
 				DC59696D21A6C2DC004ACC0C /* PhotoListController.swift in Sources */,
 				DC59696B21A6C2DC004ACC0C /* AppDelegate.swift in Sources */,
 				DC59697E21A6C313004ACC0C /* CoreDataManager.swift in Sources */,
+				DC5C372921A8196E00758B29 /* PhotoViewerController.swift in Sources */,
 				DC59698921A6D438004ACC0C /* FetchedResultsProvider.swift in Sources */,
+				DC5C372D21A854FE00758B29 /* PhotoFilterCell.swift in Sources */,
 				DC59698F21A6D9D7004ACC0C /* PhotoPickerManager.swift in Sources */,
+				DC5C372B21A84AE500758B29 /* PhotoFilterController.swift in Sources */,
+				DC5C372521A814C000758B29 /* PhotoPageController.swift in Sources */,
 				DC59699121A6DC6B004ACC0C /* PhotoCell.swift in Sources */,
 				DC59698D21A6D633004ACC0C /* GenericCVDataSource.swift in Sources */,
 				DC59698121A6CB51004ACC0C /* ImageProject.xcdatamodeld in Sources */,
