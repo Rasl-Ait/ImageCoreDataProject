@@ -36,7 +36,7 @@ extension PhotoPageController: UIPageViewControllerDataSource {
                             viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
         guard let photoVC = viewController as? PhotoViewerController,
-            let index = photos.index(of: photoVC.photo) else { return nil }
+					let index = photos.index(of: photoVC.photo) else { return nil }
         
         if index == photos.startIndex {
             return nil
