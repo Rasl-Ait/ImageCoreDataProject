@@ -9,11 +9,11 @@
 import Foundation
 
 protocol ManagedObjectType: class {
-    static var entityName: String { get }
+	static var entityName: String { get }
 }
 
 extension Photo: ManagedObjectType {
-    static var entityName: String {
-        return "Photo"
-    }
+	static var entityName: String {
+		return "Photo"
+	}
 }

@@ -1,10 +1,3 @@
-//
-//  Extension+UIView.swift
-//  MyFirebaseApp
-//
-//  Created by rasl on 05.12.2018.
-//  Copyright © 2018 rasl. All rights reserved.
-//
 
 import UIKit
 

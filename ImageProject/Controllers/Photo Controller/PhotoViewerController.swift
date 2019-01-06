@@ -9,21 +9,21 @@
 import UIKit
 
 class PhotoViewerController: UIViewController, AlertDisplayer {
-
+	
 	@IBOutlet weak var backgroungPhoto: UIImageView!
 	@IBOutlet weak var photoImage: UIImageView!
 	private var saveButton = UIButton()
-    
-    var photo: Photo!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-			addBlurEffect()
-			backgroungPhoto.image = photo.image
-			photoImage.image = photo.image
-			addSaveButton()
-        
-    }
+	
+	var photo: Photo!
+	
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		addBlurEffect()
+		backgroungPhoto.image = photo.image
+		photoImage.image = photo.image
+		addSaveButton()
+		
+	}
 	
 	private func addSaveButton() {
 		saveButton = UIButton(type: .system)
@@ -38,7 +38,7 @@ class PhotoViewerController: UIViewController, AlertDisplayer {
 											paddingRight: 8, width: 36, height: 36)
 		
 	}
-
+	
 	@objc private func saveButtonTapped(sender: UIButton) {
 		UIImageWriteToSavedPhotosAlbum(photoImage.image!, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
 	}
@@ -47,7 +47,7 @@ class PhotoViewerController: UIViewController, AlertDisplayer {
 		if let error = error {
 			displayAlert(with: "Save error", message: error.localizedDescription)
 		} else {
-		  displayAlert(with: "Saved!", message: "saved to your photos.")
+			displayAlert(with: "Saved!", message: "saved to your photos.")
 		}
 	}
 	
